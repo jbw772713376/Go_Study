@@ -1,7 +1,6 @@
 package main
 
 import (
-	"code.google.com/p/go-tour/pic"
 	"fmt"
 )
 

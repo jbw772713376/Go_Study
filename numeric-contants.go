@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 const (
-	//定义常量时没有声明类型，那么常量的类型由下文决定
+	//Big 定义常量时没有声明类型，那么常量的类型由下文决定
 	Big = 1 << 10
+	//Small >>or<<意为将二进制的位数减少或增加指定位
 	Small = Big >> 99
 )
 

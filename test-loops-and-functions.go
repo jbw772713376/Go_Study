@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func Sqrt(x float64) float64 {
+func sqrt(x float64) float64 {
 	z := 9.0
 	for i := 1; i <= 10; i++ {
 		z = z - (math.Pow(z, 2)-x)/2*z
@@ -15,5 +15,5 @@ func Sqrt(x float64) float64 {
 }
 
 func main() {
-	fmt.Println(Sqrt(81))
+	fmt.Println(sqrt(49))
 }

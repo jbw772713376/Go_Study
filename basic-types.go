@@ -6,7 +6,9 @@ import (
 )
 
 var (
+    //ToBe bool类型为true或者false
     ToBe bool = true
+    // MaxInt uint64类型
     MaxInt uint64 = 1<<64 - 1
     z complex128 = cmplx.Sqrt(-5 + 12i)
 )
