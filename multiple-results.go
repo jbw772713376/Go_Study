@@ -1,4 +1,5 @@
 package main
+// 函数可以返回任意数量的返回值。
 
 import (
     "fmt"
@@ -21,7 +22,7 @@ func swap2(Q, W, E string) (X, Y, Z string) {
     return
 }
 
-func main() {
+func multipleResults_study() {
     //调用swap_1对a、b、c赋值
     a, b, c := swap1("Hello", "World", "!")
     //调用swap_2对A、B、C赋值

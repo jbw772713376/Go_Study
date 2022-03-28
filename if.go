@@ -1,4 +1,7 @@
 package main
+// Go 的 if 语句与 for 循环类似，表达式外无需小括号 ( ) ，而大括号 { } 则是必须的。
+// 同 for 一样， if 语句可以在条件表达式前执行一个简单的语句。
+// 该语句声明的变量作用域仅在 if 之内。
 
 import (
 	"fmt"
@@ -15,7 +18,7 @@ func sqrt(x float64) string {
 	return fmt.Sprintf("%T %g", math.Sqrt(x), math.Sqrt(x))
 }
 
-func pow(x, y, lim float64) float64 {
+func ifPow(x, y, lim float64) float64 {
 	if v := math.Pow(x, y); v < lim {
 		return v
 	}
@@ -25,10 +28,10 @@ func pow(x, y, lim float64) float64 {
 	return lim
 }
 
-func main() {
+func if_study() {
 	fmt.Printf("%T\n%s\n",sqrt(4), sqrt(-9))
 	fmt.Println(
-		pow(3, 2, 10),
-		pow(3, 4, 10),
+		ifPow(3, 2, 10),
+		ifPow(3, 4, 10),
 	)
 }

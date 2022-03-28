@@ -1,4 +1,8 @@
 package main
+// 每个 Go 程序都是由包构成的。
+// 程序从 main 包开始运行。
+// 本程序通过导入路径 "fmt" 和 "math/rand" 来使用这两个包。
+// 按照约定，包名与导入路径的最后一个元素一致。例如，"math/rand" 包中的源码均以 package rand 语句开始
 
 //这里使用import导入了三个包:"fmt"、"math/rand"、"net/http"
 import (
@@ -9,7 +13,7 @@ import (
     _ "net/http"
 )
 
-func main () {
+func packages_study() {
     //使用fmt包的Println函数打印rand.Intn生成的随机数。
     fmt.Println("My favorite number is", rand.Intn(200))
 }

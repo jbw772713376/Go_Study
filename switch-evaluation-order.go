@@ -1,11 +1,14 @@
 package main
+// switch 的 case 语句从上到下顺次执行，直到匹配成功时停止。
+// 没有条件的 switch 同 switch true 一样。
+// 这种形式能将一长串 if-then-else 写得更加清晰。
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func switchEvaluationOrder_study() {
 	fmt.Println("When is Saturday?")
 	today := time.Now().Weekday()
 	switch time.Monday {

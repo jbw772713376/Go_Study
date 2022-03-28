@@ -1,11 +1,12 @@
 package main
+// 在 if 的简短语句中声明的变量同样可以在任何对应的 else 块中使用。
 
 import (
 	"fmt"
 	"math"
 )
 
-func pow(x, y, lim float64) float64 {
+func ifAndElsePow(x, y, lim float64) float64 {
 	if v := math.Pow(x, y); v < lim {
 		return v
 	} else {
@@ -14,9 +15,9 @@ func pow(x, y, lim float64) float64 {
 	return lim
 }
 
-func main() {
+func ifAndElse_study() {
 	fmt.Println(
-		pow(3, 2, 10),
-		pow(3, 3, 10),
+		ifAndElsePow(3, 2, 10),
+		ifAndElsePow(3, 3, 10),
 	)
 }

@@ -1,8 +1,9 @@
 package main
+// 没有明确初始值的变量声明会被赋予它们的 零值。
 
 import "fmt"
 
-func main() {
+func zero_study() {
 	//int类型的默认值为0
 	var i int
 	//flatt类型的默认值为0.00

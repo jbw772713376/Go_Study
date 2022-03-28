@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main() {
+func typeConversions_study() {
 	var a, b int = 3, 4
 	var f float64 = math.Sqrt(float64(a*a + b*b))
 	//短格式类型转换

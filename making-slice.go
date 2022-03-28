@@ -1,22 +1,23 @@
 package main
+// 切片可以用内建函数 make 来创建，这也是你创建动态数组的方式。
 
 import "fmt"
 
-func main() {
+func makeSlice_study() {
 	//make用于slice，map，和channel的初始化
 	//其返回由make初始化完成的数据类型的值
 	a := make([]int, 5)
-	printSlice("a", a)
+	makeSlicePrintSlice("a", a)
 
 	//make会使用使用参数初始化一个slice
 	b := make([]int, 0, 5)
-	printSlice("b", b)
+	makeSlicePrintSlice("b", b)
 	c := b[:2]
-	printSlice("c", c)
+	makeSlicePrintSlice("c", c)
 	d := b[2:5]
-	printSlice("d", d)
+	makeSlicePrintSlice("d", d)
 }
 
-func printSlice(s string, x []int) {
+func makeSlicePrintSlice(s string, x []int) {
 	fmt.Printf("%s len=%d cap=%d %v\n", s, len(x), cap(x), x)
 }
